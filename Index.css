@@ -1,4 +1,35 @@
-#root{
-    background-color: rebeccapurple;
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 4px #000;
 }
-.goal{color: aqua;}
+.logo img{
+    width: 150px;
+}
+.nav-bar ul{
+    list-style-type: none;
+    padding: 5px;
+    display: flex;
+}
+.nav-bar ul li{
+   padding: 5px;
+   margin: 10px;
+}
+.cart-setion{
+    width: 300px;
+    border: 2px solid #000;
+    background-color:#ccc;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 10px;
+}
+.restorent-setion{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+
+}
+.btnTop{
+    margin: 10px;
+    cursor: pointer;
+}

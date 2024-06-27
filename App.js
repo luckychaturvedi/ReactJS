@@ -1,15 +1,24 @@
-const heding = React.createElement(
-"div",
-{id: "heding", xgf: 'lll', className: "goal"},
-[
-    React.createElement("h4",{id: "heding2", xgf: 'lll', className: "goal"}, "nameKumar"  
-),
-    React.createElement("h2",{id: "heding3", xgf: 'lll', className: "goal"}, "Karnsh singh") 
-]
-);
+import React, { createElement } from "react";
+import ReactDom from "react-dom/client";
+import Header from "./src/components/Header";
+import BodyContainer from "./src/components/BodyContainer";
+import Footer from "./src/components/Footer";
 
 
-console.log(heding)
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const Applayout = () =>{
+    return(
+        <div className="root"> 
+            <Header />
+            
+            <BodyContainer  />
+            <Footer />
+        </div>
+    )   
+}
 
-root.render(heding)
+
+
+
+const root = ReactDom.createRoot(document.getElementById("root"))
+
+root.render(<Applayout />)
